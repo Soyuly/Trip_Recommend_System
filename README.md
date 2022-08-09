@@ -14,7 +14,7 @@
 |userId|Y|조회 할 유저의 ID입니다.|
 |areaCode|Y|지역 코드입니다.|
 
-### areaCode
+#### areaCode
 |areaCode|지역|
 |:------:|---|
 |1|서울|
