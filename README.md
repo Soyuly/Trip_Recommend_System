@@ -1,5 +1,5 @@
 # All Leave Trip Recommend System
-협업 필터링을 이용해서, 창업 아이템 All Leave Trip을 구현한 레포지터리입니다.
+협업 필터링을 이용해서, 창업 아이템 All Leave Trip 추천 시스템을 구현한 레포지터리입니다.
 
 ### 코스 추천받기
 - 요청방식 : get
