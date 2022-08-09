@@ -2,7 +2,9 @@ from dataclasses import field
 from rest_framework import serializers
 
 class Course(object):
-    def __init__(self, id, name, rating, lat, lng):
+    def __init__(self,code, areaCode, id, name, rating, lat, lng):
+        self.code = code
+        self.areaCode = areaCode
         self.id= id
         self.name = name
         self.rating = rating
@@ -11,6 +13,8 @@ class Course(object):
         
 
 class CourseSerializer(serializers.Serializer):
+    code = serializers.ChoiceField(choices=["관광지", "식당", "호텔"])
+    areaCode = serializers.IntegerField()
     id = serializers.IntegerField()
     name = serializers.CharField(max_length = 500)
     rating = serializers.FloatField()
